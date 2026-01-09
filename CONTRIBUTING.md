@@ -19,7 +19,7 @@ Thank you for your interest in contributing to StructSight! This document provid
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/structsight.git
+git clone https://github.com/ieee-cs-bmsit/structsight.git
 cd structsight
 
 # Install all dependencies

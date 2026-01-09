@@ -35,5 +35,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Core functionality for struct/class analysis
 - Basic visualization and optimization suggestions
 
-[Unreleased]: https://github.com/yourusername/structsight/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/yourusername/structsight/releases/tag/v0.1.0
+[Unreleased]: https://github.com/ieee-cs-bmsit/structsight/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ieee-cs-bmsit/structsight/releases/tag/v0.1.0

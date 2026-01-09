@@ -3,7 +3,20 @@
     "displayName": "StructSight - C++ Memory Layout Visualizer",
     "description": "Visualize C++ struct/class memory layouts with padding, alignment, and optimization insights",
     "version": "0.1.0",
-    "publisher": "ieee cs bmsitm",
+    "publisher": "ieee-cs-bmsit",
+    "author": {
+        "name": "Atul K M",
+        "email": "ieee.cs.bmsit@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ieee-cs-bmsit/structsight.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ieee-cs-bmsit/structsight/issues"
+    },
+    "homepage": "https://github.com/ieee-cs-bmsit/structsight#readme",
+    "license": "MIT",
     "icon": "resources/icon.png",
     "engines": {
         "vscode": "^1.85.0"
