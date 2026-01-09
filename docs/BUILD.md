@@ -51,7 +51,7 @@ source ~/.zshrc
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/structsight.git
+git clone https://github.com/ieee-cs-bmsit/structsight.git
 cd structsight
 ```
 

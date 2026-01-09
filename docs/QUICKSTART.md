@@ -35,7 +35,7 @@ export PATH="/usr/local/opt/llvm/bin:$PATH"
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/structsight.git
+git clone https://github.com/ieee-cs-bmsit/structsight.git
 cd structsight
 
 # Install dependencies
