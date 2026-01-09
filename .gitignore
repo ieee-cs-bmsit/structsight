@@ -1,0 +1,28 @@
+out/
+dist/
+node_modules/
+*.vsix
+build/
+*.node
+.vscode-test/
+*.log
+.DS_Store
+Thumbs.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vscode/
+*.code-workspace
+
+# Native build artifacts
+native/build/
+native/node_modules/
+
+# Extension build artifacts
+extension/out/
+extension/node_modules/
+
+# Test artifacts
+coverage/
+.nyc_output/
