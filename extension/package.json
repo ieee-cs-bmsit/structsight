@@ -1,0 +1,119 @@
+{
+    "name": "structsight",
+    "displayName": "StructSight - C++ Memory Layout Visualizer",
+    "description": "Visualize C++ struct/class memory layouts with padding, alignment, and optimization insights",
+    "version": "0.1.0",
+    "publisher": "ieee cs bmsitm",
+    "icon": "resources/icon.png",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Visualization",
+        "Linters"
+    ],
+    "keywords": [
+        "c++",
+        "cpp",
+        "memory",
+        "struct",
+        "visualization",
+        "performance",
+        "optimization"
+    ],
+    "activationEvents": [
+        "onLanguage:cpp",
+        "onLanguage:c"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "structsight.showLayout",
+                "title": "Show Memory Layout",
+                "category": "StructSight"
+            },
+            {
+                "command": "structsight.analyzeFile",
+                "title": "Analyze File",
+                "category": "StructSight"
+            }
+        ],
+        "configuration": {
+            "title": "StructSight",
+            "properties": {
+                "structsight.architecture": {
+                    "type": "string",
+                    "enum": [
+                        "x86",
+                        "x64"
+                    ],
+                    "default": "x64",
+                    "description": "Target architecture for memory layout analysis"
+                },
+                "structsight.compiler": {
+                    "type": "string",
+                    "enum": [
+                        "gcc",
+                        "clang",
+                        "msvc"
+                    ],
+                    "default": "clang",
+                    "description": "Target compiler for layout rules"
+                },
+                "structsight.cacheLineSize": {
+                    "type": "number",
+                    "default": 64,
+                    "description": "Cache line size in bytes (typically 64)"
+                },
+                "structsight.showPaddingBytes": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Highlight padding bytes in visualization"
+                },
+                "structsight.showOptimizationHints": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show optimization suggestions"
+                },
+                "structsight.enableHoverInfo": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show layout info on hover"
+                }
+            }
+        },
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "structsight.showLayout",
+                    "when": "editorLangId == cpp || editorLangId == c",
+                    "group": "navigation"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^6.13.0",
+        "@typescript-eslint/parser": "^6.13.0",
+        "@vscode/test-electron": "^2.3.8",
+        "eslint": "^8.54.0",
+        "typescript": "^5.3.3",
+        "@vscode/vsce": "^2.22.0"
+    },
+    "dependencies": {
+        "structsight-native": "file:../native"
+    }
+}

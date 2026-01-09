@@ -1,0 +1,26 @@
+{
+    "name": "structsight-native",
+    "version": "0.1.0",
+    "description": "Native C++ analysis engine for StructSight using Clang LibTooling",
+    "main": "build/Release/structsight_native.node",
+    "scripts": {
+        "install": "cmake-js compile",
+        "build": "cmake-js compile",
+        "rebuild": "cmake-js rebuild",
+        "clean": "cmake-js clean",
+        "test": "node test/test.js"
+    },
+    "gypfile": false,
+    "dependencies": {
+        "cmake-js": "^7.3.0",
+        "node-addon-api": "^8.0.0"
+    },
+    "devDependencies": {
+        "node-gyp": "^10.0.1"
+    },
+    "cmake-js": {
+        "runtime": "node",
+        "runtimeVersion": "20.10.0",
+        "arch": "x64"
+    }
+}

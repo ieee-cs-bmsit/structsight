@@ -1,0 +1,19 @@
+{
+  "name": "structsight-root",
+  "version": "0.1.0",
+  "private": true,
+  "description": "StructSight - C++ Memory Layout Visualizer monorepo",
+  "scripts": {
+    "install:all": "npm install && cd extension && npm install && cd ../native && npm install",
+    "build:native": "cd native && npm run build",
+    "build:extension": "cd extension && npm run compile",
+    "build": "npm run build:native && npm run build:extension",
+    "test": "cd extension && npm test",
+    "package": "cd extension && vsce package",
+    "watch": "cd extension && npm run watch"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
