@@ -2,6 +2,9 @@
 
 **C++ Memory Layout Visualizer for VS Code**
 
+> A project by **IEEE Computer Society BMSIT&M**  
+> Developed by **Atul K M**
+
 StructSight is a powerful VS Code extension that provides real-time visualization of C++ struct and class memory layouts. Get instant insights into memory padding, alignment, vtable layouts, and optimization opportunities - all while you code.
 
 ## ✨ Features
@@ -155,22 +158,34 @@ code .
 
 MIT License - see [LICENSE](LICENSE) for details
 
+## 👥 Author & Organization
+
+**Developed by:** Atul K M  
+**Organization:** IEEE Computer Society - BMSIT&M  
+**Project Type:** Educational Tool for C++ Developers
+
+### About IEEE CS BMSIT&M
+
+The IEEE Computer Society chapter at BMS Institute of Technology & Management is dedicated to fostering innovation and technical excellence in computer science and software engineering.
+
 ## 🙏 Acknowledgments
 
 - Built with [Clang's LibTooling](https://clang.llvm.org/docs/LibTooling.html)
 - Inspired by the need for better C++ memory layout understanding
 - Thanks to the VS Code extension API team
+- Special thanks to IEEE Computer Society BMSIT&M for supporting this project
 
 ## 🐛 Issues & Feature Requests
 
-Found a bug or have a feature request? Please [open an issue](https://github.com/yourusername/structsight/issues)!
+Found a bug or have a feature request? Please [open an issue](https://github.com/ieee-cs-bmsit/structsight/issues)!
 
 ## 📚 Resources
 
 - [C++ Memory Layout Guide](docs/memory-layout-guide.md)
 - [Optimization Best Practices](docs/optimization-guide.md)
 - [API Documentation](docs/api.md)
+- [Publishing Guide](docs/PUBLISHING.md)
 
 ---
 
-**Made with ❤️ for C++ developers who care about performance**
+**Made with ❤️ by IEEE CS BMSIT&M for C++ developers who care about performance**
